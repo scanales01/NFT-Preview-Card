@@ -27,6 +27,7 @@ body {
 }
 
 .card-container {
+    margin: auto;
     text-align: center;
     background-color: var(--card-BG);
     width: 40rem;
