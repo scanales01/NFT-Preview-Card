@@ -32,6 +32,10 @@ body {
     padding: 1rem;
 }
 
+.art {
+    width: 40rem;
+}
+
 .nft-title {
     font-weight: var(--font-bold);
     color: var(--white);
