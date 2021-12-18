@@ -5,13 +5,13 @@
     --font-light: 300;
     --font-regular: 400;
     --font-bold: 600;
-    --primary-blue: hsl(215, 51%, 70%)
-    --primary-cyan: hsl(178, 100%, 50%)
-    --main-BG: hsl(217, 54%, 11%)
-    --card-BG: hsl(216, 50%, 16%)
-    --line: hsl(215, 32%, 27%)
-    --white: hsl(0, 0%, 100%)
-    --font-size-body: 18px
+    --primary-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --font-size-body: 18px;
 }
 
 /* CSS Resets */
