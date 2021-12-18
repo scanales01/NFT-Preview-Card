@@ -14,3 +14,9 @@
     --font-size-body: 18px
 }
 
+/* Css Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
