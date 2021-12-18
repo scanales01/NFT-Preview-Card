@@ -37,43 +37,73 @@ body {
 }
 
 .card-container {
-    /* margin: 25% auto;
-    text-align: left;
-    background-color: var(--card-BG);
-    width: 20rem;
-    padding: 1rem;
-    border-radius: 5%; */
    position: fixed;
    top: 50%;
    left: 50%;
    text-align:left;
    background-color: var(--card-BG);
    width: 20rem;
-   padding: 1rem;
+   padding: 1.25rem;
    border-radius: 1rem;
    transform: translate(-50%, -50%);
 }
 
-img.art {
+/* .art-container {
+    position: relative;
+    width: 100%;
+} */
+
+.art {
     height: 100%;
     width: 100%;
     object-fit: contain;
     border-radius: 5%;
 }
 
+.art-container {
+    /* background-color: aqua;
+    border-radius: 5%; */
+    /* display: inline-block; */
+    position: relative;
+}
+
+.art-container > img.art{
+    vertical-align: middle;
+}
+
+.overlay {
+    background-color: var(--primary-cyan);
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.overlay .view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
 
 p {
     color: var(--primary-blue);
     font-weight: var(--font-regular);
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 p.price {
     font-weight: var(--font-bold);
-}
-
-p.time {
-    font-weight: var(--font-light);
+    color: var(--primary-cyan);
 }
 
 .nft-title {
@@ -90,38 +120,54 @@ p.time {
 
 .details {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    margin: auto;
+    justify-content: space-between;
+
 }
 
 .price-details {
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
 }
 
 .time-details {
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
 }
 
 .price-icon {
     width: 0.825rem;
     height: 1.35rem;
+    vertical-align: text-top;
+    margin-right: 0.25rem;
 }
 
 .time-icon {
     width: 1.275rem;
     height: 1.275rem;
-}
-
-.a-icon {
-    margin: 1rem;
+    vertical-align: text-top;
+    margin-right: 0.25rem;
 }
 
 hr {
-    border-top: var(--primary-blue);
+    height: 1px;
+    border: none;
+    background-color: var(--line);
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+}
+
+.author-icon {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    margin-right: 0.75rem;
 }
 
 .attribution {
