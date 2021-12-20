@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
+
+/* Variables */
 :root {
     --font-family: "Outfit", sans-serif;
     --font-light: 300;
@@ -36,6 +38,7 @@ body {
     background-color: var(--main-BG);
 }
 
+/* Primary Card Container */
 .card-container {
    position: fixed;
    top: 50%;
@@ -50,6 +53,7 @@ body {
    box-shadow: 0px 1.75rem 0.05rem 1rem hsl(216, 55%, 10%);
 }
 
+/* Image */
 .art {
     height: 100%;
     width: 100%;
@@ -68,6 +72,7 @@ body {
     vertical-align: middle;
 }
 
+/* Hover Overlay */
 .overlay {
     background-color: var(--primary-cyan);
     height: 100%;
@@ -96,6 +101,7 @@ body {
     opacity: 1;
 }
 
+/* Text */
 p {
     color: var(--primary-blue);
     font-weight: var(--font-regular);
@@ -135,6 +141,7 @@ p.price {
     align-items: center;
 }
 
+/* Text Icons */
 .price-icon {
     width: 0.825rem;
     height: 1.35rem;
@@ -157,6 +164,7 @@ hr {
     margin-bottom: 0.25rem;
 }
 
+/* Author */
 .credit {
     display: flex;
     align-items: center;
@@ -171,10 +179,12 @@ hr {
     margin-right: 0.75rem;
 }
 
+/* Challenge Attribution */
 .attribution {
     display: none;
 }
 
+/* Hide when display is too small */
 @media (min-height: 750px) {
     .attribution {
         display: block;
