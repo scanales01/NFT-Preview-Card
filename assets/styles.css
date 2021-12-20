@@ -172,14 +172,21 @@ hr {
 }
 
 .attribution {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    display: none;
 }
 
-.attribution p {
-    font-weight: var(--font-light);
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
+@media (min-height: 750px) {
+    .attribution {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .attribution p {
+        font-weight: var(--font-light);
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
 }
