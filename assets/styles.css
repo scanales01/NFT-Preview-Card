@@ -79,7 +79,8 @@ body {
     position: absolute;
 }
 
-.overlay .view-icon {
+.view-icon {
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,8 +88,12 @@ body {
 }
 
 .overlay:hover {
-    opacity: 0.75;
+    opacity: 0.5;
     cursor: pointer;
+}
+
+.overlay:hover + .view-icon {
+    opacity: 1;
 }
 
 p {
