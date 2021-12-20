@@ -184,7 +184,7 @@ hr {
     display: none;
 }
 
-/* Hide when display is too small */
+/* Hide when display is too small
 @media (min-height: 750px) {
     .attribution {
         display: block;
@@ -199,4 +199,4 @@ hr {
         margin-top: 0;
         margin-bottom: 1rem;
     }
-}
+} */
